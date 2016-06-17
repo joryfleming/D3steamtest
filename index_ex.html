@@ -28,7 +28,7 @@
         m = 200, // number of samples per layer
         stack = d3.layout.stack().offset("wiggle"),
         layers0 = stack(d3.range(n).map(function() { return bumpLayer(m); })),
-       // layers1 = stack(d3.range(n).map(function() { return bumpLayer(m); }));
+        layers1 = stack(d3.range(n).map(function() { return bumpLayer(m); }));
     
     var width = 960,
         height = 500;
