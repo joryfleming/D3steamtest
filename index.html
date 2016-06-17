@@ -23,11 +23,12 @@
 </head>
 <body>
   <script>
+  var trees = [0.34, 0.41, 2.8, 5.3, 10.9, 15.9];
     var n = 20, // number of layers
         m = 200, // number of samples per layer
         stack = d3.layout.stack().offset("wiggle"),
         layers0 = stack(d3.range(n).map(function() { return bumpLayer(m); })),
-        layers1 = stack(d3.range(n).map(function() { return bumpLayer(m); }));
+       // layers1 = stack(d3.range(n).map(function() { return bumpLayer(m); }));
     
     var width = 960,
         height = 500;
